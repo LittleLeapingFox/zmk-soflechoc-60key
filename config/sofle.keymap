@@ -187,12 +187,34 @@
 
         Mouse {
             bindings = <
-&none  &none  &none  &none  &none  &none                      &none       &none           &none         &none           &none            &none
-&none  &none  &none  &none  &none  &none                      &kp K_UNDO  &kp K_PASTE     &kp K_COPY    &kp K_CUT       &kp K_REDO       &none
-&none  &none  &none  &none  &none  &none                      &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5
-&none  &none  &none  &none  &none  &none  &none    &none      &none       &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-              &none  &none  &none  &none  &none    &mkp RCLK  &mkp MB1    &mkp MB3        &none         &none
+&none  &none  &none  &none  &none  &none                     &none       &none           &none           &none         &none            &none
+&none  &none  &none  &none  &none  &none                     &kp K_UNDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_REDO       &none
+&none  &none  &none  &none  &none  &none                     &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB5
+&none  &none  &none  &none  &none  &none  &none    &none     &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+              &none  &none  &none  &none  &none    &mkp MB2  &mkp MB1    &mkp MB3        &none           &none
             >;
+        };
+
+        Num {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans   &trans                     &trans    &trans   &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3   &trans                     &trans    &trans   &trans  &trans  &trans  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6   &trans                     &trans    &trans   &trans  &trans  &trans  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9   &trans  &trans    &trans   &trans    &trans   &trans  &trans  &trans  &trans
+                &trans  &trans  &kp DOT  &kp N0  &trans    &kp RET  &kp BSPC  &kp DEL  &trans  &trans
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&kp PERCENT  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COMMA                       &kp            &kp              &kp          &kp            &kp            &kp
+&kp EXCL     &kp LEFT_BRACE  &kp APOSTROPHE        &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                    &kp            &kp RIGHT_SHIFT  &kp RCTRL    &kp RIGHT_ALT  &kp RIGHT_GUI  &kp
+&kp TILDE    &kp CARET       &kp KP_EQUAL          &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK                    &kp            &kp BSPC         &kp TAB      &kp SPACE      &kp RET        &kp
+&kp AT       &kp LESS_THAN   &kp PIPE              &kp KP_MINUS           &kp GREATER_THAN  &kp FSLH      &kp          &kp  &kp BACKSLASH  &kp DEL          &kp LS(TAB)  &kp            &kp AMPERSAND  &kp
+                             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS          &kp PERIOD    &kp COLON    &kp  &kp            &kp              &kp          &kp
+            >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
 };

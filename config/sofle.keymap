@@ -207,11 +207,11 @@
 
         Symbol {
             bindings = <
-&kp PERCENT  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COMMA                            &kp            &kp              &kp          &kp            &kp            &kp
-&kp EXCL     &kp LEFT_BRACE  &kp APOSTROPHE        &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                         &kp            &kp RIGHT_SHIFT  &kp RCTRL    &kp RIGHT_ALT  &kp RIGHT_GUI  &kp
-&kp TILDE    &kp CARET       &kp KP_EQUAL          &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK                         &kp SEMI       &kp BSPC         &kp TAB      &kp SPACE      &kp RET        &kp
-&kp AT       &kp LESS_THAN   &kp PIPE              &kp KP_MINUS           &kp GREATER_THAN  &kp FSLH      &kp          &kp       &kp BACKSLASH  &kp DEL          &kp LS(TAB)  &kp            &kp AMPERSAND  &kp
-                             &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS          &kp PERIOD    &kp COLON    &kp SEMI  &kp            &kp              &kp          &kp
+&kp TILDE  &kp GRAVE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COMMA                            &kp            &kp              &kp          &kp            &kp            &kp
+&kp EXCL   &kp LEFT_BRACE  &kp APOSTROPHE        &kp DOUBLE_QUOTES      &kp RIGHT_BRACE   &kp QUESTION                         &kp PERCENT    &kp RIGHT_SHIFT  &kp RCTRL    &kp RIGHT_ALT  &kp RIGHT_GUI  &kp
+&kp POUND  &kp CARET       &kp KP_EQUAL          &kp UNDERSCORE         &kp DOLLAR        &kp ASTERISK                         &kp SEMI       &kp BSPC         &kp TAB      &kp SPACE      &kp RET        &kp
+&kp AT     &kp LESS_THAN   &kp PIPE              &kp KP_MINUS           &kp GREATER_THAN  &kp FSLH      &kp          &kp       &kp BACKSLASH  &kp DEL          &kp LS(TAB)  &kp            &kp AMPERSAND  &kp
+                           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS          &kp PERIOD    &kp COLON    &kp SEMI  &kp            &kp              &kp          &kp
             >;
 
             sensor-bindings = <&inc_dec_kp 0 0>;

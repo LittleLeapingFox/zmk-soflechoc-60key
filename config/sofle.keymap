@@ -81,11 +81,11 @@
 
         TWM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp               &kp LG(LC(LS(DOWN)))   &kp LG(LS(DOWN))   &kp LG(LS(UP))   &kp LG(LS(LC(UP)))   &kp                    &kp  &kp  &kp  &kp  &kp                &kp
+&kp LG(LC(HOME))  &kp LG(LC(LEFT))       &kp LG(LC(DOWN))   &kp LG(LC(UP))   &kp LG(LC(RIGHT))    &kp LG(G)              &kp  &kp  &kp  &kp  &kp                &kp
+&kp LG(HOME)      &kp LG(LEFT_ARROW)     &kp LG(DOWN)       &kp LG(UP)       &kp LG(RIGHT)        &kp LG(H)              &kp  &kp  &kp  &kp  &kp                &kp
+&kp               &kp LG(LC(PAGE_DOWN))  &kp LG(PAGE_DOWN)  &kp LG(PAGE_UP)  &kp LG(LC(PAGE_UP))  &kp        &kp    &kp  &kp  &kp  &kp  &kp  &kp LG(LS(SLASH))  &kp
+                                         &kp                &kp              &kp                  &kp        &kp    &kp  &kp  &kp  &kp  &kp
             >;
         };
 

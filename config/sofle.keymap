@@ -81,11 +81,11 @@
 
         TWM {
             bindings = <
-&mt LG(P) LG(B)  &kp LG(LC(LS(DOWN)))           &kp LG(LS(DOWN))   &kp LG(LS(UP))   &kp LG(LS(LC(UP)))   &mt LG(LS(F)) LG(F)              &kp  &kp  &kp  &kp  &kp                &kp
-&kp LG(COMMA)    &mt LG(LC(HOME)) LC(LG(LEFT))  &kp LG(LC(DOWN))   &kp LG(LC(UP))   &kp LG(LC(RIGHT))    &kp LG(PERIOD)                   &kp  &kp  &kp  &kp  &kp                &kp
-&kp LG(G)        &mt LG(HOME) LG(LEFT)          &kp LG(DOWN)       &kp LG(UP)       &kp LG(RIGHT)        &kp LG(H)                        &kp  &kp  &kp  &kp  &kp                &kp
-&kp              &kp LG(LC(PAGE_DOWN))          &kp LG(PAGE_DOWN)  &kp LG(PAGE_UP)  &kp LG(LC(PAGE_UP))  &mt LG(LS(N)) LG(N)  &kp    &kp  &kp  &kp  &kp  &kp  &kp LG(LS(SLASH))  &kp
-                                                &kp                &kp              &kp                  &kp                  &kp    &kp  &kp  &kp  &kp  &kp
+&mt LG(P) LG(B)  &kp LG(LC(LS(DOWN)))           &kp LG(LS(DOWN))   &kp LG(LS(UP))   &kp LG(LS(LC(UP)))   &mt LG(LS(F)) LG(F)              &kp        &kp  &kp  &kp  &kp                &kp
+&kp LG(COMMA)    &mt LG(LC(HOME)) LC(LG(LEFT))  &kp LG(LC(DOWN))   &kp LG(LC(UP))   &kp LG(LC(RIGHT))    &kp LG(PERIOD)                   &kp LG(Y)  &kp  &kp  &kp  &kp                &kp
+&kp LG(G)        &mt LG(HOME) LG(LEFT)          &kp LG(DOWN)       &kp LG(UP)       &kp LG(RIGHT)        &kp LG(H)                        &kp        &kp  &kp  &kp  &kp                &kp
+&kp              &kp LG(LC(PAGE_DOWN))          &kp LG(PAGE_DOWN)  &kp LG(PAGE_UP)  &kp LG(LC(PAGE_UP))  &mt LG(LS(N)) LG(N)  &kp    &kp  &kp        &kp  &kp  &kp  &kp LG(LS(SLASH))  &kp
+                                                &kp                &kp              &kp                  &kp                  &kp    &kp  &kp        &kp  &kp  &kp
             >;
         };
 

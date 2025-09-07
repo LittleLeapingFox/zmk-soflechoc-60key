@@ -23,8 +23,33 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <14 14>;
-            then-layer = <15>;
+            if-layers = <15 15>;
+            then-layer = <16>;
+        };
+
+        Launcher {
+            if-layers = <4 3>;
+            then-layer = <4>;
+        };
+
+        Button {
+            if-layers = <3 1>;
+            then-layer = <13>;
+        };
+
+        Power {
+            if-layers = <4 1>;
+            then-layer = <13>;
+        };
+
+        Lightroom {
+            if-layers = <3 6>;
+            then-layer = <13>;
+        };
+
+        Macro {
+            if-layers = <1 6>;
+            then-layer = <13>;
         };
     };
 
@@ -45,6 +70,30 @@
             bindings = <&kp ESCAPE>;
             key-positions = <25 41>;
         };
+
+        Launcher_Layer {
+            bindings = <&to 10>;
+            key-positions = <52 53>;
+            layers = <13>;
+        };
+
+        Button_Layer {
+            bindings = <&to 2>;
+            key-positions = <53 54>;
+            layers = <13>;
+        };
+
+        Lightroom_layer {
+            bindings = <&to 11>;
+            key-positions = <42 53>;
+            layers = <13>;
+        };
+
+        Macro_Layer {
+            bindings = <&to 5>;
+            key-positions = <42 54>;
+            layers = <13>;
+        };
     };
 
     behaviors {
@@ -61,11 +110,21 @@
 
         Miryoku_base {
             bindings = <
-&kp PRINTSCREEN  &kp N1          &kp N2       &kp N3          &kp N4            &kp N5                                   &kp N6           &kp N7             &kp N8           &kp N9       &kp N0              &kp EQUAL
-&kp GRAVE        &kp Q           &kp W        &kp E           &kp R             &kp T                                    &kp Y            &kp U              &kp I            &kp O        &kp P               &kp MINUS
-&kp LSHFT        &mt LEFT_ALT A  &mt LCTRL S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G                                    &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RCTRL L  &mt RIGHT_ALT SEMI  &kp SQT
-&to 0            &kp Z           &kp X        &kp C           &kp V             &kp B        &to 9        &trans         &kp N            &kp M              &kp COMMA        &kp DOT      &kp FSLH            &kp RSHFT
-                                 &trans       &trans          &lt 5 ESC         &lt 2 SPACE  &lt 8 TAB    &lt 10 RETURN  &lt 6 BACKSPACE  &lt 11 DELETE      &trans           &trans
+&kp PRINTSCREEN  &kp N1          &kp N2       &kp N3          &kp N4            &kp N5                                  &kp N6           &kp N7             &kp N8           &kp N9       &kp N0              &kp EQUAL
+&kp GRAVE        &kp Q           &kp W        &kp E           &kp R             &kp T                                   &kp Y            &kp U              &kp I            &kp O        &kp P               &kp MINUS
+&kp LSHFT        &mt LEFT_ALT A  &mt LCTRL S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G                                   &kp H            &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RCTRL L  &mt RIGHT_ALT SEMI  &kp SQT
+&to 0            &kp Z           &kp X        &kp C           &kp V             &kp B        &to 6        &trans        &kp N            &kp M              &kp COMMA        &kp DOT      &kp FSLH            &kp RSHFT
+                                 &mo 13       &trans          &lt 4 ESC         &lt 3 SPACE  &lt 1 TAB    &lt 9 RETURN  &lt 8 BACKSPACE  &lt 12 DELETE      &trans           &mo 13
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&none  &none  &none  &none  &none  &none                     &none       &none           &none           &none         &none            &none
+&none  &none  &none  &none  &none  &none                     &kp K_UNDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_REDO       &none
+&none  &none  &none  &none  &none  &none                     &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB5
+&none  &none  &none  &none  &none  &none  &none    &none     &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+              &none  &none  &none  &none  &none    &mkp MB2  &mkp MB1    &mkp MB3        &none           &none
             >;
         };
 
@@ -89,26 +148,6 @@
             >;
         };
 
-        test2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        Launcher {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         Nav {
             bindings = <
 &none  &none  &none  &none  &none  &none                  &none         &none        &none       &none      &none       &none
@@ -119,33 +158,13 @@
             >;
         };
 
-        Num {
-            bindings = <
-&kp  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                  &kp N6    &kp N7   &kp N8  &kp N9  &kp N0  &kp
-&kp  &kp     &kp N1  &kp N2  &kp N3   &kp                     &kp       &kp      &kp     &kp     &kp     &kp
-&kp  &kp     &kp N4  &kp N5  &kp N6   &kp                     &kp       &kp      &kp     &kp     &kp     &kp
-&kp  &kp     &kp N7  &kp N8  &kp N9   &kp     &kp    &kp      &kp       &kp      &kp     &kp     &kp     &kp
-             &kp     &kp     &kp DOT  &kp N0  &kp    &kp RET  &kp BSPC  &kp DEL  &kp     &kp
-            >;
-        };
-
-        workflow_like_lightroom {
+        Macro {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        Mouse {
-            bindings = <
-&none  &none  &none  &none  &none  &none                     &none       &none           &none           &none         &none            &none
-&none  &none  &none  &none  &none  &none                     &kp K_UNDO  &kp K_PASTE     &kp K_COPY      &kp K_CUT     &kp K_REDO       &none
-&none  &none  &none  &none  &none  &none                     &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB5
-&none  &none  &none  &none  &none  &none  &none    &none     &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-              &none  &none  &none  &none  &none    &mkp MB2  &mkp MB1    &mkp MB3        &none           &none
             >;
         };
 
@@ -156,6 +175,16 @@
 &kp  &kp  &kp  &kp  &kp  &kp                     &kp C_PREV        &kp C_REWIND  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_FF  &kp C_NEXT
 &kp  &kp  &kp  &kp  &kp  &kp  &kp    &kp         &kp               &kp           &kp           &kp           &kp       &kp
           &kp  &kp  &kp  &kp  &kp    &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE    &kp           &kp
+            >;
+        };
+
+        Num {
+            bindings = <
+&kp  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                  &kp N6    &kp N7   &kp N8  &kp N9  &kp N0  &kp
+&kp  &kp     &kp N1  &kp N2  &kp N3   &kp                     &kp       &kp      &kp     &kp     &kp     &kp
+&kp  &kp     &kp N4  &kp N5  &kp N6   &kp                     &kp       &kp      &kp     &kp     &kp     &kp
+&kp  &kp     &kp N7  &kp N8  &kp N9   &kp     &kp    &kp      &kp       &kp      &kp     &kp     &kp     &kp
+             &kp     &kp     &kp DOT  &kp N0  &kp    &kp RET  &kp BSPC  &kp DEL  &kp     &kp
             >;
         };
 
@@ -181,7 +210,7 @@
             >;
         };
 
-        Layers {
+        Launcher {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
@@ -191,13 +220,43 @@
             >;
         };
 
+        lightroom {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Power {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Layers {
+            bindings = <
+&kp    &kp  &kp  &kp  &kp    &kp                    &kp    &kp    &kp  &kp  &kp  &kp
+&kp    &kp  &kp  &kp  &kp    &kp                    &kp    &kp    &kp  &kp  &kp  &kp
+&kp    &kp  &kp  &kp  &kp    &kp                    &kp    &kp    &kp  &kp  &kp  &kp
+&to 0  &kp  &kp  &kp  &kp    &kp    &to 6    &kp    &kp    &kp    &kp  &kp  &kp  &kp
+            &kp  &kp  &to 4  &to 3  &to 1    &to 8  &to 7  &to 9  &kp  &kp
+            >;
+        };
+
         default_layer {
             bindings = <
 &gresc            &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB           &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
 &kp LEFT_SHIFT    &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                          &kp LGUI  &kp LALT  &kp LCTRL  &mo 0   &kp SPACE    &kp ENTER  &mo 14  &kp RCTRL  &kp LALT   &kp RGUI
+                          &kp LGUI  &kp LALT  &kp LCTRL  &mo 0   &kp SPACE    &kp ENTER  &mo 15  &kp RCTRL  &kp LALT   &kp RGUI
             >;
 
             display-name = "default";
@@ -289,6 +348,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        test2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
 
         test {

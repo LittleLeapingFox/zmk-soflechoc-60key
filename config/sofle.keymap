@@ -29,7 +29,7 @@
 
         Launcher {
             if-layers = <4 3>;
-            then-layer = <4>;
+            then-layer = <10>;
         };
 
         Button {
@@ -91,7 +91,7 @@
 
         Macro_Layer {
             bindings = <&to 5>;
-            key-positions = <42 54>;
+            key-positions = <54 42>;
             layers = <13>;
         };
     };

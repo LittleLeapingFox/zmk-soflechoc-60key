@@ -140,11 +140,11 @@
 
         TWM {
             bindings = <
-&mt LG(P) LG(B)  &kp LG(LC(LS(DOWN)))           &kp LG(LS(DOWN))   &kp LG(LS(UP))   &kp LG(LS(LC(UP)))   &mt LG(LS(F)) LG(F)              &kp        &kp               &kp               &kp               &kp               &kp
-&kp LG(COMMA)    &mt LG(LC(HOME)) LC(LG(LEFT))  &kp LG(LC(DOWN))   &kp LG(LC(UP))   &kp LG(LC(RIGHT))    &kp LG(PERIOD)                   &kp LG(Y)  &kp               &kp               &kp               &kp               &kp
-&kp LG(G)        &mt LG(HOME) LG(LEFT)          &kp LG(DOWN)       &kp LG(UP)       &kp LG(RIGHT)        &kp LG(H)                        &kp        &kp               &kp               &kp               &kp               &kp
-&to 0            &kp LG(LC(PAGE_DOWN))          &kp LG(PAGE_DOWN)  &kp LG(PAGE_UP)  &kp LG(LC(PAGE_UP))  &mt LG(LS(N)) LG(N)  &kp    &kp  &kp        &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(LS(L))
-                                                &kp                &kp              &kp                  &kp                  &kp    &kp  &kp        &kp               &kp               &kp
+&mt LG(P) LG(B)  &kp LG(LC(LS(DOWN)))           &kp LG(LS(DOWN))  &kp LG(LS(UP))    &kp LG(LS(LC(UP)))  &mt LG(LS(F)) LG(F)              &kp        &kp LG(LC(N5))         &kp LG(LC(NUMBER_6))  &kp LG(LC(N7))        &kp LG(LC(A))         &kp
+&kp LG(COMMA)    &mt LG(LC(HOME)) LC(LG(LEFT))  &kp LG(LC(DOWN))  &kp LG(LC(UP))    &kp LG(LC(RIGHT))   &kp LG(PERIOD)                   &kp LG(Y)  &kp LG(LC(NUMBER_1))   &kp LG(LC(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &kp
+&kp LG(G)        &mt LG(HOME) LG(LEFT)          &kp LG(DOWN)      &kp LG(UP)        &kp LG(RIGHT)       &kp LG(H)                        &kp        &kp LG(LC(PAGE_DOWN))  &kp LG(PG_DN)         &kp LG(PG_UP)         &kp LG(LC(PG_UP))     &kp
+&to 0            &kp LG(NUMBER_1)               &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)    &mt LG(LS(N)) LG(N)  &kp    &kp  &kp        &kp LG(N5)             &kp LG(NUMBER_6)      &kp LG(N7)            &kp LG(NUMBER_4)      &kp LG(LS(L))
+                                                &mo 13            &kp               &kp                 &kp                  &kp    &kp  &kp        &kp                    &kp                   &mo 13
             >;
         };
 

@@ -217,7 +217,7 @@
 &kp PRINTSCREEN  &kp K_CUT  &kp K_COPY     &kp K_PASTE   &kp K_UNDO          &kp K_REDO                     &none  &none  &none  &none  &none  &none
 &kp LG(Q)        &kp LC(W)  &kp DELETE     &kp LC(R)     &kp LA(LC(TAB))     &kp LC(T)                      &none  &none  &none  &none  &none  &none
 &kp K_BACK       &kp HOME   &kp PAGE_DOWN  &kp PG_UP     &kp END             &kp K_FORWARD                  &none  &none  &none  &none  &none  &none
-&to 0            &kp LC(A)  &kp LC(MINUS)  &kp LC(PLUS)  &kp K_CONTEXT_MENU  &kp K_FIND     &none    &none  &none  &none  &none  &none  &none  &none
+&to 0            &kp LC(A)  &kp LC(MINUS)  &kp LC(PLUS)  &kp K_CONTEXT_MENU  &kp RC(F)      &none    &none  &none  &none  &none  &none  &none  &none
                             &to 1          &none         &none               &none          &none    &none  &none  &none  &none  &to 1
             >;
         };

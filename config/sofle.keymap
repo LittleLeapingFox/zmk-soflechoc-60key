@@ -146,11 +146,11 @@
 
         Nav {
             bindings = <
-&none           &none         &none      &none         &none           &none                  &kp LC(Z)     &kp RC(V)    &kp RC(C)   &kp LC(X)  &kp LC(Y)   &none
-&none           &none         &none      &none         &none           &none                  &kp K_UNDO    &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_REDO  &none
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_SHIFT  &none                  &kp CAPSLOCK  &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT   &none
-&to 0           &none         &none      &none         &none           &none  &none    &none  &kp INSERT    &kp HOME     &kp PG_DN   &kp PG_UP  &kp END     &none
-                              &tog 1     &none         &none           &mo 3  &mo 2    &none  &none         &none        &none       &tog 1
+&none           &none         &none      &none         &none           &none                  &kp LC(Y)     &kp RC(Z)   &kp RC(V)    &kp LC(C)   &kp LC(X)  &none
+&none           &none         &none      &none         &none           &none                  &kp K_REDO    &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &none
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_SHIFT  &none                  &kp CAPSLOCK  &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &none
+&to 0           &none         &none      &none         &none           &none  &none    &none  &kp INSERT    &kp HOME    &kp PG_DN    &kp PG_UP   &kp END    &none
+                              &tog 1     &none         &none           &mo 3  &mo 2    &none  &none         &none       &none        &tog 1
             >;
         };
 

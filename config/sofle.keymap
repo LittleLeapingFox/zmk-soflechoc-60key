@@ -128,10 +128,10 @@
 
         Nav {
             bindings = <
-&kp LC(A)         &kp LEFT_ALT       &kp LEFT_GUI      &kp LCTRL             &kp LEFT_SHIFT     &none                             &kp LG(Y)     &kp LG(Z)           &kp LG(V)     &kp LG(C)         &kp LG(X)        &none
+&kp LC(A)         &kp LEFT_ALT       &kp LEFT_GUI      &kp LCTRL             &kp LEFT_SHIFT     &kp CAPSLOCK                      &kp LG(Y)     &kp LG(Z)           &kp LG(V)     &kp LG(C)         &kp LG(X)        &none
 &kp LS(LC(HOME))  &kp LS(LC(LEFT))   &kp LS(LC(DOWN))  &kp LS(LC(UP_ARROW))  &kp LC(LS(RIGHT))  &kp LS(LC(END))                   &none         &kp LC(LEFT_ARROW)  &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)    &none
 &kp LS(HOME)      &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(UP)            &kp LS(RIGHT)      &kp LS(END)                       &kp LC(LEFT)  &kp LEFT            &kp DOWN      &kp UP            &kp RIGHT        &kp LC(RIGHT)
-&to 1             &kp LC(BACKSPACE)  &kp BACKSPACE     &kp DEL               &kp LC(DELETE)     &none            &none     &none  &kp INSERT    &mt HOME LC(HOME)   &kp PG_DN     &kp PG_UP         &mt RC(END) END  &none
+&to 1             &kp LC(BACKSPACE)  &kp BACKSPACE     &kp DEL               &kp LC(DELETE)     &kp INSERT       &none     &none  &none         &mt HOME LC(HOME)   &kp PG_DN     &kp PG_UP         &mt RC(END) END  &none
                                      &tog 2            &none                 &none              &mo 3            &mo 11    &none  &none         &none               &none         &tog 2
             >;
         };

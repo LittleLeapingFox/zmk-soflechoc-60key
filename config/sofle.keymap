@@ -200,11 +200,11 @@
 
         button {
             bindings = <
-&mt LG(PRINTSCREEN) PRINTSCREEN  &none                &kp LC(MINUS)         &kp LC(KP_PLUS)        &none               &none                                &none  &none  &none  &none   &none  &none
-&kp LG(Q)                        &kp LC(W)            &kp DELETE            &kp LC(R)              &kp LC(TAB)         &mt LC(LS(T)) LC(T)                  &none  &none  &none  &none   &none  &none
-&kp LC(L)                        &mt LS(LC(X)) K_CUT  &mt LS(LC(C)) K_COPY  &mt LC(LS(V)) K_PASTE  &mt LC(Z) K_UNDO    &mt LC(Y) K_REDO                     &none  &none  &none  &none   &none  &none
-&to 1                            &kp LC(A)            &none                 &none                  &kp K_CONTEXT_MENU  &kp RC(F)            &mo 9    &none  &none  &none  &none  &none   &none  &none
-                                                      &tog 2                &none                  &mo 4               &mo 3                &none    &none  &none  &none  &none  &tog 2
+&mt LG(PRINTSCREEN) PRINTSCREEN  &none                &kp LC(MINUS)         &kp LC(KP_PLUS)        &none             &none                                &none  &none  &none  &none   &none  &none
+&kp LG(Q)                        &kp LC(W)            &kp DELETE            &kp LC(R)              &kp LC(TAB)       &mt LC(LS(T)) LC(T)                  &none  &none  &none  &none   &none  &none
+&kp LC(L)                        &mt LS(LC(X)) K_CUT  &mt LS(LC(C)) K_COPY  &mt LC(LS(V)) K_PASTE  &mt LC(Z) K_UNDO  &mt LC(Y) K_REDO                     &none  &none  &none  &none   &none  &none
+&to 1                            &kp LC(A)            &none                 &kp K_CONTEXT_MENU     &kp RC(F)         &none                &mo 9    &none  &none  &none  &none  &none   &none  &none
+                                                      &tog 2                &none                  &mo 4             &mo 3                &none    &none  &none  &none  &none  &tog 2
             >;
         };
 

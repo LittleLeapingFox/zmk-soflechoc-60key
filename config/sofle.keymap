@@ -88,6 +88,11 @@
             bindings = <&kp LC(LS(T))>;
             key-positions = <40 38>;
         };
+
+        close {
+            bindings = <&kp LG(Q)>;
+            key-positions = <56 31>;
+        };
     };
 
     behaviors {

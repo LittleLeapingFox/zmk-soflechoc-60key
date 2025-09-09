@@ -83,6 +83,11 @@
             bindings = <&kp K_FORWARD>;
             key-positions = <39 40>;
         };
+
+        reopenclosedtab {
+            bindings = <&kp LC(LS(T))>;
+            key-positions = <40 38>;
+        };
     };
 
     behaviors {

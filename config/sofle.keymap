@@ -118,6 +118,13 @@
             bindings = <&kp LG(LEFT) &kp LG(H)>;
             label = "FOCUSSCROLLLEFT";
         };
+
+        focussscrollright: focussscrollright {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT) &kp LG(H)>;
+            label = "FOCUSSSCROLLRIGHT";
+        };
     };
 
     keymap {

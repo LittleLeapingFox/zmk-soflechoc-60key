@@ -66,11 +66,21 @@
 
         ms_scrl_down {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <38 39>;
+            key-positions = <26 27>;
         };
 
         msscrlup {
             bindings = <&msc SCRL_UP>;
+            key-positions = <27 28>;
+        };
+
+        back {
+            bindings = <&kp K_BACK>;
+            key-positions = <38 39>;
+        };
+
+        forward {
+            bindings = <&kp K_FORWARD>;
             key-positions = <39 40>;
         };
     };

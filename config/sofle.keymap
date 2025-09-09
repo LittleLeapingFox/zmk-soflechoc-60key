@@ -217,11 +217,11 @@
 
         Nav {
             bindings = <
-&kp LC(A)         &kp LEFT_ALT           &kp LEFT_GUI           &kp LCTRL               &kp LEFT_SHIFT            &kp CAPSLOCK                     &kp LG(Y)     &kp LG(Z)           &kp LG(V)     &kp LG(C)         &kp LG(X)        &none
-&kp LS(LC(HOME))  &kp LS(LC(LEFT))       &kp LS(LC(DOWN))       &kp LS(LC(UP_ARROW))    &kp LC(LS(RIGHT))         &kp LS(LC(END))                  &none         &kp LC(LEFT_ARROW)  &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)    &none
-&kp LS(HOME)      &mt LEFT_ALT LS(LEFT)  &mt LEFT_GUI LS(DOWN)  &mt LCTRL LS(UP_ARROW)  &mt LEFT_SHIFT LS(RIGHT)  &kp LS(END)                      &kp LC(LEFT)  &kp LEFT            &kp DOWN      &kp UP            &kp RIGHT        &kp LC(RIGHT)
-&to 0             &kp LC(BACKSPACE)      &kp BACKSPACE          &kp DEL                 &kp LC(DELETE)            &kp INSERT       &none    &none  &none         &mt LC(HOME) HOME   &kp PG_DN     &kp PG_UP         &mt RC(END) END  &none
-                                         &tog 1                 &none                   &none                     &mo 3            &mo 2    &none  &none         &none               &none         &tog 1
+&kp LC(A)         &kp LEFT_ALT           &kp LEFT_GUI           &kp LCTRL               &kp LEFT_SHIFT            &kp CAPSLOCK                     &kp LG(Y)  &kp LG(Z)          &kp LG(V)     &kp LG(C)         &kp LG(X)        &none
+&kp LS(LC(HOME))  &kp LS(LC(LEFT))       &kp LS(LC(DOWN))       &kp LS(LC(UP_ARROW))    &kp LC(LS(RIGHT))         &kp LS(LC(END))                  &none      &kp PAGE_DOWN      &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp PG_UP        &none
+&kp LS(HOME)      &mt LEFT_ALT LS(LEFT)  &mt LEFT_GUI LS(DOWN)  &mt LCTRL LS(UP_ARROW)  &mt LEFT_SHIFT LS(RIGHT)  &kp LS(END)                      &none      &kp LEFT           &kp DOWN      &kp UP            &kp RIGHT        &none
+&to 0             &kp LC(BACKSPACE)      &kp BACKSPACE          &kp DEL                 &kp LC(DELETE)            &kp INSERT       &none    &none  &none      &mt LC(HOME) HOME  &kp LC(LEFT)  &kp LC(RIGHT)     &mt RC(END) END  &none
+                                         &tog 1                 &none                   &none                     &mo 3            &mo 2    &none  &none      &none              &none         &tog 1
             >;
         };
 

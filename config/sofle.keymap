@@ -119,11 +119,11 @@
             label = "FOCUSSCROLLLEFT";
         };
 
-        focussscrollright: focussscrollright {
+        focusscrollright: focusscrollright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(RIGHT) &kp LG(H)>;
-            label = "FOCUSSSCROLLRIGHT";
+            label = "FOCUSSCROLLRIGHT";
         };
     };
 

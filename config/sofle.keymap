@@ -86,12 +86,17 @@
 
         reopenclosedtab {
             bindings = <&kp LC(LS(T))>;
-            key-positions = <40 38>;
+            key-positions = <25 26 27>;
         };
 
         close {
             bindings = <&kp LG(Q)>;
-            key-positions = <56 31>;
+            key-positions = <28 27 26 25>;
+        };
+
+        launcher {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <28 27 26>;
         };
     };
 

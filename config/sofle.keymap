@@ -64,9 +64,14 @@
             key-positions = <51 58>;
         };
 
-        mouse {
-            bindings = <&tog 12>;
-            key-positions = <51 31>;
+        ms_scrl_down {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <38 39>;
+        };
+
+        msscrlup {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <39 40>;
         };
     };
 

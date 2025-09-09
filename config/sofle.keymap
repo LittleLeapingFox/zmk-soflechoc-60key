@@ -32,27 +32,27 @@
 
         Media {
             if-layers = <4 3>;
-            then-layer = <5>;
-        };
-
-        Mouse {
-            if-layers = <3 11>;
-            then-layer = <2>;
-        };
-
-        Power {
-            if-layers = <4 11>;
             then-layer = <13>;
         };
 
+        Mouse {
+            if-layers = <3 2>;
+            then-layer = <14>;
+        };
+
+        Power {
+            if-layers = <4 2>;
+            then-layer = <14>;
+        };
+
         Lightroom {
-            if-layers = <3 9>;
-            then-layer = <10>;
+            if-layers = <3 8>;
+            then-layer = <9>;
         };
 
         Macro {
-            if-layers = <11 9>;
-            then-layer = <12>;
+            if-layers = <2 8>;
+            then-layer = <10>;
         };
     };
 
@@ -60,7 +60,7 @@
         compatible = "zmk,combos";
 
         numtog {
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
             key-positions = <51 58>;
         };
     };
@@ -88,111 +88,21 @@
 
         Miryoku_base {
             bindings = <
-&mt LG(PRINTSCREEN) PRINTSCREEN  &kp N1          &kp N2          &kp N3       &kp N4            &kp N5                                   &kp N6           &kp N7             &kp N8       &kp N9           &kp N0              &kp EQUAL
-&kp GRAVE                        &kp Q           &kp W           &kp E        &kp R             &kp T                                    &kp Y            &kp U              &kp I        &kp O            &kp P               &kp MINUS
-&kp LSHFT                        &mt LEFT_ALT A  &mt LEFT_GUI S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                    &kp H            &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_GUI L  &mt RIGHT_ALT SEMI  &kp SQT
-&to 1                            &kp Z           &kp X           &kp C        &kp V             &kp B        &mo 9         &none         &kp N            &kp M              &kp COMMA    &kp DOT          &kp FSLH            &kp RSHFT
-                                                 &tog 2          &none        &lt 4 ESC         &lt 3 SPACE  &lt 11 TAB    &lt 7 RETURN  &lt 6 BACKSPACE  &lt 8 DELETE       &none        &tog 2
+&mt LG(PRINTSCREEN) PRINTSCREEN  &kp N1          &kp N2          &kp N3       &kp N4            &kp N5                                  &kp N6           &kp N7             &kp N8       &kp N9           &kp N0              &kp EQUAL
+&kp GRAVE                        &kp Q           &kp W           &kp E        &kp R             &kp T                                   &kp Y            &kp U              &kp I        &kp O            &kp P               &kp MINUS
+&kp LSHFT                        &mt LEFT_ALT A  &mt LEFT_GUI S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G                                   &kp H            &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_GUI L  &mt RIGHT_ALT SEMI  &kp SQT
+&to 0                            &kp Z           &kp X           &kp C        &kp V             &kp B        &mo 8        &none         &kp N            &kp M              &kp COMMA    &kp DOT          &kp FSLH            &kp RSHFT
+                                                 &tog 1          &none        &lt 4 ESC         &lt 3 SPACE  &lt 2 TAB    &lt 6 RETURN  &lt 5 BACKSPACE  &lt 7 DELETE       &none        &tog 1
             >;
         };
 
         Layers {
             bindings = <
-&none  &none   &none   &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &none   &none   &none  &none  &none                   &none  &none  &none  &none  &none  &none
-&none  &to 10  &to 12  &to 5  &to 2  &none                   &none  &none  &none  &none  &none  &none
-&to 1  &none   &none   &none  &none  &none  &to 9     &none  &none  &none  &none  &none  &none  &none
-               &none   &none  &to 4  &to 3  &to 11    &to 7  &to 6  &to 8  &none  &none
-            >;
-        };
-
-        Mouse {
-            bindings = <
-&none       &none           &none            &none         &none            &kp RETURN                              &none     &none           &none           &none         &none            &none
-&kp LG(Q)   &kp RC(W)       &kp LC(LS(TAB))  &kp LC(TAB)   &kp RC(R)        &mt RC(RS(T)) RC(T)                     &none     &none           &none           &none         &none            &none
-&kp K_BACK  &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP  &msc SCRL_RIGHT  &kp K_FORWARD                           &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB5
-&to 1       &kp LEFT        &kp DOWN         &kp UP        &kp RIGHT        &kp DELETE           &none    &none     &none     &kp H           &kp J           &kp K         &kp L            &none
-                            &tog 2           &none         &none            &none                &none    &mkp MB2  &mkp MB1  &mkp MB3        &none           &tog 2
-            >;
-        };
-
-        TWM {
-            bindings = <
-&mt LG(P) LG(B)  &kp LG(LC(LS(DOWN)))        &kp LG(LS(DOWN))  &kp LG(LS(UP))    &kp LG(LS(LC(UP)))  &mt LG(LS(F)) LG(F)                   &none          &kp LG(LC(N5))         &kp LG(LC(NUMBER_6))  &kp LG(LC(N7))        &kp LG(LC(A))         &none
-&kp LG(COMMA)    &mt LG(LC(HOME)) LC(LG(J))  &kp LG(LC(K))     &kp LG(LC(I))     &kp LG(LC(L))       &kp LG(PERIOD)                        &kp LG(Y)      &kp LG(LC(NUMBER_1))   &kp LG(LC(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &none
-&kp LG(G)        &mt LG(HOME) LG(LEFT)       &kp LG(DOWN)      &kp LG(UP)        &kp LG(RIGHT)       &mt LG(LS(H)) LG(H)                   &none          &kp LG(LC(PAGE_DOWN))  &kp LG(PG_DN)         &kp LG(PG_UP)         &kp LG(LC(PG_UP))     &none
-&to 1            &kp LG(NUMBER_1)            &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)    &mt LG(LS(N)) LG(N)  &mo 9     &none  &kp RG(RS(N))  &kp LG(N5)             &kp LG(NUMBER_6)      &kp LG(N7)            &kp LG(NUMBER_4)      &kp LG(LS(L))
-                                             &tog 2            &none             &mo 4               &none                &mo 11    &none  &none          &none                  &none                 &tog 2
-            >;
-        };
-
-        Nav {
-            bindings = <
-&kp LC(A)         &kp LEFT_ALT           &kp LEFT_GUI           &kp LCTRL               &kp LEFT_SHIFT            &kp CAPSLOCK                      &kp LG(Y)     &kp LG(Z)           &kp LG(V)     &kp LG(C)         &kp LG(X)        &none
-&kp LS(LC(HOME))  &kp LS(LC(LEFT))       &kp LS(LC(DOWN))       &kp LS(LC(UP_ARROW))    &kp LC(LS(RIGHT))         &kp LS(LC(END))                   &none         &kp LC(LEFT_ARROW)  &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)    &none
-&kp LS(HOME)      &mt LEFT_ALT LS(LEFT)  &mt LEFT_GUI LS(DOWN)  &mt LCTRL LS(UP_ARROW)  &mt LEFT_SHIFT LS(RIGHT)  &kp LS(END)                       &kp LC(LEFT)  &kp LEFT            &kp DOWN      &kp UP            &kp RIGHT        &kp LC(RIGHT)
-&to 1             &kp LC(BACKSPACE)      &kp BACKSPACE          &kp DEL                 &kp LC(DELETE)            &kp INSERT       &none     &none  &none         &mt HOME LC(HOME)   &kp PG_DN     &kp PG_UP         &mt RC(END) END  &none
-                                         &tog 2                 &none                   &none                     &mo 3            &mo 11    &none  &none         &none               &none         &tog 2
-            >;
-        };
-
-        Media {
-            bindings = <
-&none  &none       &none         &none            &none             &none                          &none             &none         &none         &none         &none     &none
-&none  &none       &none         &none            &none             &none                          &none             &none         &kp C_BRI_DN  &kp C_BRI_UP  &none     &none
-&none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &none                          &kp C_PREV        &kp C_REWIND  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_FF  &kp C_NEXT
-&to 1  &kp C       &kp J         &kp L            &kp F             &kp FSLH  &none    &none       &none             &none         &none         &none         &none     &none
-                   &tog 2        &none            &none             &none     &none    &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE    &none         &tog 2
-            >;
-        };
-
-        Num {
-            bindings = <
-&none            &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &kp COMMA                            &none        &none           &none           &none         &none            &none
-&kp KP_PLUS      &kp EQUAL  &kp N7                &kp N8                 &kp N9   &kp DOT                              &kp K_REDO   &kp K_UNDO      &kp K_PASTE     &kp K_COPY    &kp K_CUT        &none
-&kp KP_SUBTRACT  &kp RET    &kp N4                &kp N5                 &kp N6   &kp KP_MULTIPLY                      &kp LS(TAB)  &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp TAB
-&to 1            &kp N0     &kp N1                &kp N2                 &kp N3   &kp KP_DIVIDE    &none      &none    &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                            &tog 2                &none                  &kp ESC  &kp SPACE        &kp TAB    &kp RET  &kp BSPC     &kp DEL         &none           &tog 2
-            >;
-        };
-
-        Symbol {
-            bindings = <
-&kp AT     &kp GRAVE           &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp SEMICOLON          &kp COMMA                         &none          &kp RIGHT_SHIFT  &kp RCTRL         &kp RIGHT_GUI      &kp RIGHT_ALT  &none
-&kp EXCL   &kp LEFT_BRACE      &kp APOSTROPHE         &kp DOUBLE_QUOTES      &kp RIGHT_BRACE        &kp QUESTION                      &none          &kp DEL          &kp LS(TAB)       &none              &kp ESCAPE     &none
-&kp POUND  &mt LEFT_ALT CARET  &mt LEFT_GUI KP_EQUAL  &mt LCTRL UNDER        &mt LEFT_SHIFT DOLLAR  &kp ASTERISK                      &kp PERCENT    &kp BSPC         &kp TAB           &kp SPACE          &kp RET        &none
-&kp TILDE  &kp LESS_THAN       &kp PIPE               &kp KP_MINUS           &kp GREATER_THAN       &kp FSLH      &to 1        &none  &kp BACKSLASH  &kp PLUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND  &kp AT
-                               &tog 2                 &to 1                  &kp SEMICOLON          &kp PERIOD    &kp COLON    &none  &none          &none            &to 1             &tog 2
-            >;
-        };
-
-        Fun {
-            bindings = <
-&none  &none  &kp F10  &kp F11  &kp F12  &none                  &none  &none            &none      &none          &none          &none
-&none  &none  &kp F7   &kp F8   &kp F9   &none                  &none  &none            &none      &none          &none          &none
-&none  &none  &kp F4   &kp F5   &kp F6   &none                  &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_GUI  &kp RIGHT_ALT  &none
-&to 1  &none  &kp F1   &kp F2   &kp F3   &none  &none    &none  &none  &none            &none      &none          &none          &none
-              &tog 2   &none    &none    &none  &none    &none  &none  &none            &none      &tog 2
-            >;
-        };
-
-        Launcher {
-            bindings = <
-&none          &none          &none          &none              &none          &none                           &none          &none  &none  &none   &kp LC(LA(P))  &none
-&none          &none          &kp LA(L)      &kp LC(LA(LS(K)))  &none          &kp LC(LA(O))                   &none          &none  &none  &none   &none          &none
-&kp LC(LA(I))  &kp LC(LA(J))  &kt LC(LA(U))  &kp LC(LA(K))      &kp LG(SPACE)  &kp LC(LA(M))                   &kp LC(LA(Y))  &none  &none  &none   &none          &none
-&to 1          &kp LC(LA(H))  &none          &none              &none          &none          &none     &none  &none          &none  &none  &none   &none          &none
-                              &tog 2         &none              &none          &mo 3          &mo 11    &none  &none          &none  &none  &tog 2
-            >;
-        };
-
-        lightroom {
-            bindings = <
-&none  &none  &none   &none  &none  &none                  &none  &none  &none  &none   &none  &none
-&none  &none  &none   &none  &none  &none                  &none  &none  &none  &none   &none  &none
-&none  &none  &none   &none  &none  &none                  &none  &none  &none  &none   &none  &none
-&to 1  &none  &none   &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
-              &tog 2  &none  &none  &none  &none    &none  &none  &none  &none  &tog 2
+&none  &none  &none   &none   &none   &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none   &none   &none   &none                  &none  &none  &none  &none  &none  &none
+&none  &to 9  &to 10  &to 11  &to 12  &none                  &none  &none  &none  &none  &none  &none
+&to 0  &none  &none   &none   &none   &none  &to 8    &none  &none  &none  &none  &none  &none  &none
+              &none   &none   &to 4   &to 3  &to 2    &to 6  &to 5  &to 7  &none  &none
             >;
         };
 
@@ -201,8 +111,78 @@
 &mt LG(PRINTSCREEN) PRINTSCREEN  &kp K_CMENU          &kp LC(MINUS)         &kp LC(KP_PLUS)        &kp LC(N0)        &kp RETURN                           &none  &none  &none  &none   &none  &none
 &kp LG(Q)                        &kp RC(W)            &kp RC(RS(TAB))       &kp RC(TAB)            &kp RC(R)         &mt RC(RS(T)) RC(T)                  &none  &none  &none  &none   &none  &none
 &kp LC(L)                        &mt LS(LC(X)) K_CUT  &mt LS(LC(C)) K_COPY  &mt LC(LS(V)) K_PASTE  &mt LC(Z) K_UNDO  &mt LC(Y) K_REDO                     &none  &none  &none  &none   &none  &none
-&to 1                            &kp LC(A)            &kp K_BACK            &kp K_FORWARD          &kp RC(F)         &kp DELETE           &mo 9    &none  &none  &none  &none  &none   &none  &none
-                                                      &tog 2                &none                  &mo 4             &mo 3                &none    &none  &none  &none  &none  &tog 2
+&to 0                            &kp LC(A)            &kp K_BACK            &kp K_FORWARD          &kp RC(F)         &kp DELETE           &mo 8    &none  &none  &none  &none  &none   &none  &none
+                                                      &tog 1                &none                  &mo 4             &mo 3                &none    &none  &none  &none  &none  &tog 1
+            >;
+        };
+
+        TWM {
+            bindings = <
+&mt LG(P) LG(B)  &kp LG(LC(LS(DOWN)))        &kp LG(LS(DOWN))  &kp LG(LS(UP))    &kp LG(LS(LC(UP)))  &mt LG(LS(F)) LG(F)                  &none          &kp LG(LC(N5))         &kp LG(LC(NUMBER_6))  &kp LG(LC(N7))        &kp LG(LC(A))         &none
+&kp LG(COMMA)    &mt LG(LC(HOME)) LC(LG(J))  &kp LG(LC(K))     &kp LG(LC(I))     &kp LG(LC(L))       &kp LG(PERIOD)                       &kp LG(Y)      &kp LG(LC(NUMBER_1))   &kp LG(LC(NUMBER_2))  &kp LG(LC(NUMBER_3))  &kp LG(LC(NUMBER_4))  &none
+&kp LG(G)        &mt LG(HOME) LG(LEFT)       &kp LG(DOWN)      &kp LG(UP)        &kp LG(RIGHT)       &mt LG(LS(H)) LG(H)                  &none          &kp LG(LC(PAGE_DOWN))  &kp LG(PG_DN)         &kp LG(PG_UP)         &kp LG(LC(PG_UP))     &none
+&to 0            &kp LG(NUMBER_1)            &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)    &mt LG(LS(N)) LG(N)  &mo 8    &none  &kp RG(RS(N))  &kp LG(N5)             &kp LG(NUMBER_6)      &kp LG(N7)            &kp LG(NUMBER_4)      &kp LG(LS(L))
+                                             &tog 1            &none             &mo 4               &none                &mo 2    &none  &none          &none                  &none                 &tog 1
+            >;
+        };
+
+        Nav {
+            bindings = <
+&kp LC(A)         &kp LEFT_ALT           &kp LEFT_GUI           &kp LCTRL               &kp LEFT_SHIFT            &kp CAPSLOCK                     &kp LG(Y)     &kp LG(Z)           &kp LG(V)     &kp LG(C)         &kp LG(X)        &none
+&kp LS(LC(HOME))  &kp LS(LC(LEFT))       &kp LS(LC(DOWN))       &kp LS(LC(UP_ARROW))    &kp LC(LS(RIGHT))         &kp LS(LC(END))                  &none         &kp LC(LEFT_ARROW)  &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(RIGHT)    &none
+&kp LS(HOME)      &mt LEFT_ALT LS(LEFT)  &mt LEFT_GUI LS(DOWN)  &mt LCTRL LS(UP_ARROW)  &mt LEFT_SHIFT LS(RIGHT)  &kp LS(END)                      &kp LC(LEFT)  &kp LEFT            &kp DOWN      &kp UP            &kp RIGHT        &kp LC(RIGHT)
+&to 0             &kp LC(BACKSPACE)      &kp BACKSPACE          &kp DEL                 &kp LC(DELETE)            &kp INSERT       &none    &none  &none         &mt LC(HOME) HOME   &kp PG_DN     &kp PG_UP         &mt RC(END) END  &none
+                                         &tog 1                 &none                   &none                     &mo 3            &mo 2    &none  &none         &none               &none         &tog 1
+            >;
+        };
+
+        Num {
+            bindings = <
+&none            &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none    &kp COMMA                            &none        &none           &none           &none         &none            &none
+&kp KP_PLUS      &kp EQUAL  &kp N7                &kp N8                 &kp N9   &kp DOT                              &kp K_REDO   &kp K_UNDO      &kp K_PASTE     &kp K_COPY    &kp K_CUT        &none
+&kp KP_SUBTRACT  &kp RET    &kp N4                &kp N5                 &kp N6   &kp KP_MULTIPLY                      &kp LS(TAB)  &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT        &kp TAB
+&to 0            &kp N0     &kp N1                &kp N2                 &kp N3   &kp KP_DIVIDE    &none      &none    &none        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                            &tog 1                &none                  &kp ESC  &kp SPACE        &kp TAB    &kp RET  &kp BSPC     &kp DEL         &none           &tog 1
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&kp AT     &kp GRAVE           &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp SEMICOLON          &kp COMMA                         &none          &kp RIGHT_SHIFT  &kp RCTRL         &kp RIGHT_GUI      &kp RIGHT_ALT  &none
+&kp EXCL   &kp LEFT_BRACE      &kp APOSTROPHE         &kp DOUBLE_QUOTES      &kp RIGHT_BRACE        &kp QUESTION                      &none          &kp DEL          &kp LS(TAB)       &none              &kp ESCAPE     &none
+&kp POUND  &mt LEFT_ALT CARET  &mt LEFT_GUI KP_EQUAL  &mt LCTRL UNDER        &mt LEFT_SHIFT DOLLAR  &kp ASTERISK                      &kp PERCENT    &kp BSPC         &kp TAB           &kp SPACE          &kp RET        &none
+&kp TILDE  &kp LESS_THAN       &kp PIPE               &kp KP_MINUS           &kp GREATER_THAN       &kp FSLH      &to 0        &none  &kp BACKSLASH  &kp PLUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND  &kp AT
+                               &tog 1                 &to 0                  &kp SEMICOLON          &kp PERIOD    &kp COLON    &none  &none          &none            &none             &tog 1
+            >;
+        };
+
+        Fun {
+            bindings = <
+&none  &none  &kp F10  &kp F11  &kp F12  &none                  &none  &none            &none      &none          &none          &none
+&none  &none  &kp F7   &kp F8   &kp F9   &none                  &none  &none            &none      &none          &none          &none
+&none  &none  &kp F4   &kp F5   &kp F6   &none                  &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_GUI  &kp RIGHT_ALT  &none
+&to 0  &none  &kp F1   &kp F2   &kp F3   &none  &none    &none  &none  &none            &none      &none          &none          &none
+              &tog 1   &none    &none    &none  &none    &none  &none  &none            &none      &tog 1
+            >;
+        };
+
+        Launcher {
+            bindings = <
+&none          &none          &none          &none              &none          &none                          &none          &none  &none  &none   &kp LC(LA(P))  &none
+&none          &none          &kp LA(L)      &kp LC(LA(LS(K)))  &none          &kp LC(LA(O))                  &none          &none  &none  &none   &none          &none
+&kp LC(LA(I))  &kp LC(LA(J))  &kt LC(LA(U))  &kp LC(LA(K))      &kp LG(SPACE)  &kp LC(LA(M))                  &kp LC(LA(Y))  &none  &none  &none   &none          &none
+&to 0          &kp LC(LA(H))  &none          &none              &none          &none          &none    &none  &none          &none  &none  &none   &none          &none
+                              &tog 1         &none              &none          &mo 3          &mo 2    &none  &none          &none  &none  &tog 1
+            >;
+        };
+
+        lightroom {
+            bindings = <
+&none  &none  &none   &none  &none  &none                  &none  &none  &none  &none   &none  &none
+&none  &none  &none   &none  &none  &none                  &none  &none  &none  &none   &none  &none
+&none  &none  &none   &none  &none  &none                  &none  &none  &none  &none   &none  &none
+&to 0  &none  &none   &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
+              &tog 1  &none  &none  &none  &none    &none  &none  &none  &none  &tog 1
             >;
         };
 
@@ -211,8 +191,28 @@
 &none  &none  &none   &none  &none  &none                  &none  &none   &none  &none   &none  &none
 &none  &none  &none   &none  &none  &none                  &none  &none   &none  &none   &none  &none
 &none  &none  &none   &none  &none  &none                  &none  &email  &none  &none   &none  &none
-&to 1  &none  &none   &none  &none  &none  &none    &none  &none  &none   &none  &none   &none  &none
-              &tog 2  &none  &none  &none  &none    &none  &none  &none   &none  &tog 2
+&to 0  &none  &none   &none  &none  &none  &none    &none  &none  &none   &none  &none   &none  &none
+              &tog 1  &none  &none  &none  &none    &none  &none  &none   &none  &tog 1
+            >;
+        };
+
+        Media {
+            bindings = <
+&none  &none       &none         &none            &none             &none                          &none             &none         &none         &none         &none     &none
+&none  &none       &none         &none            &none             &none                          &none             &none         &kp C_BRI_DN  &kp C_BRI_UP  &none     &none
+&none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &none                          &kp C_PREV        &kp C_REWIND  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_FF  &kp C_NEXT
+&to 0  &kp C       &kp J         &kp L            &kp F             &kp FSLH  &none    &none       &none             &none         &none         &none         &none     &none
+                   &tog 1        &none            &none             &none     &none    &kp C_STOP  &kp C_PLAY_PAUSE  &kp C_MUTE    &none         &tog 1
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&none       &none           &none            &none         &none            &kp RETURN                              &none     &none           &none           &none         &none            &none
+&kp LG(Q)   &kp RC(W)       &kp LC(LS(TAB))  &kp LC(TAB)   &kp RC(R)        &mt RC(RS(T)) RC(T)                     &none     &none           &none           &none         &none            &none
+&kp K_BACK  &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP  &msc SCRL_RIGHT  &kp K_FORWARD                           &mkp MB4  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp MB5
+&to 0       &kp LEFT        &kp DOWN         &kp UP        &kp RIGHT        &kp DELETE           &none    &none     &none     &kp H           &kp J           &kp K         &kp L            &none
+                            &tog 1           &none         &none            &none                &none    &mkp MB2  &mkp MB1  &mkp MB3        &none           &tog 1
             >;
         };
 
@@ -221,7 +221,7 @@
 &bt BT_CLR_ALL  &none  &none  &none  &none  &studio_unlock                  &none         &none         &none         &none         &none         &kp C_SLEEP
 &none           &none  &none  &none  &none  &none                           &none         &none         &none         &none         &none         &none
 &none           &none  &none  &none  &none  &none                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-&to 1           &none  &none  &none  &none  &none           &none    &none  &none         &none         &none         &none         &none         &none
+&to 0           &none  &none  &none  &none  &none           &none    &none  &none         &none         &none         &none         &none         &none
                        &none  &none  &none  &none           &none    &none  &none         &none         &none         &none
             >;
         };

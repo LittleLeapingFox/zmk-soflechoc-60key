@@ -32,17 +32,17 @@
 
         Media {
             if-layers = <4 3>;
-            then-layer = <13>;
+            then-layer = <11>;
         };
 
         Mouse {
             if-layers = <3 2>;
-            then-layer = <14>;
+            then-layer = <12>;
         };
 
         Power {
             if-layers = <4 2>;
-            then-layer = <14>;
+            then-layer = <13>;
         };
 
         Lightroom {

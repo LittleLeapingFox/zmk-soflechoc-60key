@@ -111,7 +111,7 @@
 
         focuscenter {
             bindings = <&kp LG(H)>;
-            key-positions = <14 15>;
+            key-positions = <15 14>;
         };
 
         delete {
@@ -121,7 +121,7 @@
 
         leftclickmouse {
             bindings = <&mkp MB1>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
         };
 
         return {

@@ -26,13 +26,13 @@
 
 &mmv {
     trigger-period-ms = <6>;
-    time-to-max-speed-ms = <120>;
-    acceleration-exponent = <3>;
+    time-to-max-speed-ms = <70>;
+    acceleration-exponent = <5>;
 };
 
 &msc {
     time-to-max-speed-ms = <200>;
-    acceleration-exponent = <1>;
+    acceleration-exponent = <0>;
     trigger-period-ms = <8>;
 };
 

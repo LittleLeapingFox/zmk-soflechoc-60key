@@ -24,6 +24,12 @@
     tapping-term-ms = <280>;
 };
 
+&mmv {
+    trigger-period-ms = <6>;
+    time-to-max-speed-ms = <120>;
+    acceleration-exponent = <3>;
+};
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 

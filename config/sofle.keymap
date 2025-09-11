@@ -13,6 +13,7 @@
  * You can bump MOVE_VAL higher (e.g., 2600–3000) if you want even more speed.
  * SCRL_VAL controls the default for SCRL_* (keyboard wheel) behaviors.
  */
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2400
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 24
 
@@ -34,9 +35,9 @@
 };
 
 &mmv {
-    trigger-period-ms = <6>;
-    time-to-max-speed-ms = <70>;
-    acceleration-exponent = <5>;
+    trigger-period-ms = <8>;
+    time-to-max-speed-ms = <180>;
+    acceleration-exponent = <2>;
 };
 
 &msc {

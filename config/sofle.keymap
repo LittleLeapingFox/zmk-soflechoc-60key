@@ -167,6 +167,21 @@
             bindings = <&kp LG(F)>;
             key-positions = <16 15 14 13>;
         };
+
+        overview {
+            bindings = <&kp LG(Y)>;
+            key-positions = <17 12>;
+        };
+
+        heighpresets {
+            bindings = <&kp LG(LS(N))>;
+            key-positions = <4 1>;
+        };
+
+        reload {
+            bindings = <&kp LC(R)>;
+            key-positions = <40 37>;
+        };
     };
 
     behaviors {

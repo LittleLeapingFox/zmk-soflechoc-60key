@@ -145,7 +145,7 @@
             bindings = <&mkp MB1>;
             key-positions = <15 16>;
             require-prior-idle-ms = <60>;
-            timeout-ms = <60>;
+            timeout-ms = <25>;
         };
 
         return {

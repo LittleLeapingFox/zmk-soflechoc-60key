@@ -14,7 +14,7 @@
  * SCRL_VAL controls the default for SCRL_* (keyboard wheel) behaviors.
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2400
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 24
 
 /*

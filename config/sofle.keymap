@@ -120,6 +120,8 @@
         launcher {
             bindings = <&kp LG(SPACE)>;
             key-positions = <28 27 26>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <100>;
         };
 
         closetab {
@@ -135,6 +137,8 @@
         focuscenter {
             bindings = <&kp LG(H)>;
             key-positions = <15 14>;
+            timeout-ms = <20>;
+            require-prior-idle-ms = <100>;
         };
 
         delete {
@@ -145,8 +149,8 @@
         leftclickmouse {
             bindings = <&mkp MB1>;
             key-positions = <15 16>;
-            require-prior-idle-ms = <60>;
-            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <20>;
         };
 
         return {

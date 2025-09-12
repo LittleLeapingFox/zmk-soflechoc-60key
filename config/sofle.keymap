@@ -89,6 +89,7 @@
         ms_scrl_down {
             bindings = <&msc SCRL_DOWN>;
             key-positions = <26 27>;
+            timeout-ms = <25>;
         };
 
         msscrlup {

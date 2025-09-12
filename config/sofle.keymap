@@ -183,6 +183,16 @@
             bindings = <&kp LC(R)>;
             key-positions = <40 37>;
         };
+
+        zoomin {
+            bindings = <&kp LC(KP_PLUS)>;
+            key-positions = <28 25>;
+        };
+
+        zoomout {
+            bindings = <&kp LC(KP_MINUS)>;
+            key-positions = <29 24>;
+        };
     };
 
     behaviors {

@@ -197,6 +197,11 @@
             bindings = <&kp LC(KP_MINUS)>;
             key-positions = <29 24>;
         };
+
+        chrome {
+            bindings = <&kp LA(LC(K))>;
+            key-positions = <29 28>;
+        };
     };
 
     behaviors {

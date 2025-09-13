@@ -150,12 +150,13 @@
             bindings = <&mkp MB1>;
             key-positions = <15 16>;
             require-prior-idle-ms = <100>;
-            timeout-ms = <20>;
+            timeout-ms = <15>;
         };
 
         return {
             bindings = <&kp RETURN>;
             key-positions = <14 15 16>;
+            timeout-ms = <40>;
         };
 
         deletehold {

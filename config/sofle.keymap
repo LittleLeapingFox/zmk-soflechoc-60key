@@ -302,11 +302,11 @@
 
         Symbol {
             bindings = <
-&kp AT     &kp GRAVE           &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp SEMICOLON          &kp COMMA                         &none          &kp RIGHT_SHIFT  &kp RCTRL         &kp RIGHT_GUI      &kp RIGHT_ALT  &none
-&kp EXCL   &kp LEFT_BRACE      &kp APOSTROPHE         &kp DOUBLE_QUOTES      &kp RIGHT_BRACE        &kp QUESTION                      &none          &kp DEL          &kp LS(TAB)       &none              &kp ESCAPE     &none
-&kp POUND  &mt LEFT_ALT CARET  &mt LEFT_GUI KP_EQUAL  &mt LCTRL UNDER        &mt LEFT_SHIFT DOLLAR  &kp ASTERISK                      &kp PERCENT    &kp BSPC         &kp TAB           &kp SPACE          &kp RET        &none
-&kp TILDE  &kp LESS_THAN       &kp PIPE               &kp KP_MINUS           &kp GREATER_THAN       &kp FSLH      &to 0        &none  &kp BACKSLASH  &kp PLUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND  &kp AT
-                               &tog 1                 &to 0                  &kp SEMICOLON          &kp PERIOD    &kp COLON    &none  &none          &none            &none             &tog 1
+&kp GRAVE  &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp PERIOD                        &none          &kp RIGHT_SHIFT  &kp RCTRL    &kp RIGHT_GUI      &kp RIGHT_ALT  &none
+&kp EXCL   &kp COMMA           &kp LEFT_BRACE         &kp RIGHT_BRACE        &kp SEMICOLON          &kp QUESTION                      &none          &kp DEL          &kp LS(TAB)  &none              &kp ESCAPE     &none
+&kp POUND  &mt LEFT_ALT CARET  &mt LEFT_GUI KP_EQUAL  &mt LCTRL UNDER        &mt LEFT_SHIFT DOLLAR  &kp ASTERISK                      &kp PERCENT    &kp BSPC         &kp TAB      &kp SPACE          &kp RET        &none
+&kp TILDE  &kp LESS_THAN       &kp PIPE               &kp KP_MINUS           &kp GREATER_THAN       &kp FSLH      &to 0        &none  &kp BACKSLASH  &kp PLUS         &kp SQT      &kp DOUBLE_QUOTES  &kp AMPERSAND  &kp AT
+                               &tog 1                 &to 0                  &kp SEMICOLON          &kp PERIOD    &kp COLON    &none  &none          &none            &none        &tog 1
             >;
         };
 
@@ -377,6 +377,16 @@
 &none           &none  &none  &none  &none  &none                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
 &to 0           &none  &none  &none  &none  &none           &none    &none  &none         &none         &none         &none         &none         &none
                        &none  &none  &none  &none           &none    &none  &none         &none         &none         &none
+            >;
+        };
+
+        symbol_og {
+            bindings = <
+&kp AT     &kp GRAVE           &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &kp SEMICOLON          &kp COMMA                         &none          &kp RIGHT_SHIFT  &kp RCTRL         &kp RIGHT_GUI      &kp RIGHT_ALT  &none
+&kp EXCL   &kp LEFT_BRACE      &kp APOSTROPHE         &kp DOUBLE_QUOTES      &kp RIGHT_BRACE        &kp QUESTION                      &none          &kp DEL          &kp LS(TAB)       &none              &kp ESCAPE     &none
+&kp POUND  &mt LEFT_ALT CARET  &mt LEFT_GUI KP_EQUAL  &mt LCTRL UNDER        &mt LEFT_SHIFT DOLLAR  &kp ASTERISK                      &kp PERCENT    &kp BSPC         &kp TAB           &kp SPACE          &kp RET        &none
+&kp TILDE  &kp LESS_THAN       &kp PIPE               &kp KP_MINUS           &kp GREATER_THAN       &kp FSLH      &to 0        &none  &kp BACKSLASH  &kp PLUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND  &kp AT
+                               &tog 1                 &to 0                  &kp SEMICOLON          &kp PERIOD    &kp COLON    &none  &none          &none            &none             &tog 1
             >;
         };
     };

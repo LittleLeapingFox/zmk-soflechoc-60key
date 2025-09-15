@@ -41,8 +41,8 @@
 };
 
 &msc {
-    time-to-max-speed-ms = <140>;
-    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <90>;
+    acceleration-exponent = <1.5>;
     trigger-period-ms = <10>;
 };
 
